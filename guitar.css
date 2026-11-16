@@ -1,0 +1,361 @@
+body {
+    background-color: rgb(255, 237, 197);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.header {
+    background-color: rgb(255, 225, 159);
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*I look up on internet how to do this because this is cool*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+}
+
+.logo a {
+    color: black;
+    /*-webkit-text-stroke: #ffffff 0.35px;*/
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 35px; 
+    padding-right: 30px;
+}
+
+.nav-item a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-item a:hover, .nav-item a:active{
+  color: blue;
+  text-decoration: underline;
+}
+
+.index-instruments h1 {
+    font-family: "Copperplate Gothic", Copperplate Gothic Light, fantasy;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    text-align: center;
+    -webkit-text-stroke: 1px white; /*I found out that webkit is very usefull*/
+    padding-top: 0.5em; /*em means 0.5 times the original size idk*/
+    padding-bottom: 0.5em;
+    background-image: url(images/many-guitars-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.index-instruments h2 {
+    font-family: 'Courier New', Courier, Lucida Sans Typewriter, Lucida Typewriter monospace;
+    color: black;
+    font-size: 40px;
+    text-decoration: wavy;
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.40);
+}
+
+.index-instruments h3 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.image-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item p {
+    margin-top: 8px;
+    font-size: 25px;
+    color: black;
+}
+
+.image-item a:link, .image-item a:visited {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+}
+
+.image-item a:hover, .image-item a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.image-list-item {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.index-us {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.index-us-texts {
+    flex: 1;
+}
+
+.index-us-texts h2 {
+    text-align: right;
+}
+
+.index-us-texts h1 {
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+.index-us-texts a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.index-us-texts a {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+.index-us-image {
+    flex: 1.5;
+}
+
+.index-us-image img {
+    width: 50%;
+    height: auto;
+}
+
+.back-to-menu a {
+    display: inline-block;
+    background: rgb(163, 252, 31);
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.back-to-menu h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 32px;
+}
+
+.back-to-menu a:hover {
+    display: inline-block;
+    background: rgb(202, 255, 122);
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(255, 225, 159);
+    margin-top: 50px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.footer p {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer a {
+    color: rgb(97, 97, 255);
+    text-decoration: none;
+}
+
+/*OTHER PAGES CSS*/
+/*image + paragraph format div, LEFT IMAGE*/
+.image-left-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-left-container > img { /*So that it only applies on image*/
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-left-container .content-box {
+    flex: 1;
+}
+
+.image-left-container h1 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.image-left-container h2 {
+    font-size: 23px;
+    color: #3b3b3b;
+    margin: 16px 0 16px 0;
+    font-weight: normal;
+}
+
+.image-left-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/*RIGHT IMAGE CONTAINER*/
+.image-right-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-right-container .content-box {
+    flex: 1;
+}
+
+.image-right-container > img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-right-container h1 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.image-right-container h2 {
+    font-size: 23px;
+    color: #3b3b3b;
+    margin: 16px 0 16px 0;
+    font-weight: normal;
+}
+
+.image-right-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/*GUITARS DIVs 3 felx*/
+.guitars-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 25px;
+}
+
+.guitars-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guitars-item h1 {
+    margin-top: 8px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Caveat', cursive; /*font 2*/
+    margin-bottom: 0px;
+}
+
+.guitars-item p {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    max-width: 80%;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.guitars-item h2 {
+    margin-top: 2px;
+    font-family: 'Anton', sans-serif; /*font 1*/
+}
+
+.guitars-list-item {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    width: 280px;
+    max-width: 100%;
+    display: block;
+}
+
+.stock-email {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: monospace;
+
+}
+
+.stock-email p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.stock-email a:hover {
+    text-decoration: underline;
+}
+
+.stock-email a {
+    text-decoration: none;
+    font-size: 30px;
+}
