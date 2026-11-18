@@ -359,3 +359,20 @@ body {
     text-decoration: none;
     font-size: 30px;
 }
+
+.references {
+    align-items: center;
+    text-align: center;
+}
+
+.ref-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.ref-under ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
